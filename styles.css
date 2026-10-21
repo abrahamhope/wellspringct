@@ -66,8 +66,10 @@ p { margin: 0 0 1.1em; }
   transition: background 0.2s, color 0.2s, border-color 0.2s;
   border: 1.5px solid var(--blue);
 }
+.btn:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
 .btn-primary { background: var(--blue); color: var(--white); }
 .btn-primary:hover { background: var(--blue-dark); border-color: var(--blue-dark); color: var(--white); }
+.btn-primary:active { background: var(--deep); border-color: var(--deep); color: var(--white); }
 .btn-ghost { color: var(--blue); background: transparent; }
 .btn-ghost:hover { background: var(--blue); color: var(--white); }
 .btn-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 2rem; }
@@ -86,7 +88,7 @@ p { margin: 0 0 1.1em; }
 .nav-links { display: flex; align-items: center; gap: 34px; list-style: none; margin: 0; padding: 0; }
 .nav-links a { color: var(--ink); text-decoration: none; font-weight: 500; font-size: 0.95rem; white-space: nowrap; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--blue); }
-.nav-links .btn { color: var(--white); padding: 0.6rem 1.2rem; }
+.nav-links .btn, .nav-links .btn:hover { color: var(--white); padding: 0.6rem 1.2rem; }
 .nav-toggle {
   display: none;
   background: none;
