@@ -312,3 +312,19 @@ section { padding: 96px 0; }
 
 /* Text-only section */
 .narrow > div { max-width: 760px; }
+
+/* Larger tap targets on touch screens (about 44px tall) */
+@media (max-width: 860px) {
+  .site-footer li a,
+  .card-link,
+  .program-item .card-link,
+  .info-list a,
+  .page-hero .note a { display: inline-block; padding: 12px 0; }
+  .site-footer li { margin-bottom: 0; }
+  .site-footer li:not(:has(a)) { margin-bottom: 8px; }
+  .social { gap: 12px; }
+  .social a { width: 44px; height: 44px; }
+  .nav-toggle { padding: 10px; margin-right: -10px; }
+  .nav-links a { padding: 13px 0; }
+  .brand { display: block; padding: 5px 0; }
+}
