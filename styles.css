@@ -298,3 +298,10 @@ section { padding: 96px 0; }
 [hidden] { display: none !important; }
 @media (max-width: 960px) { .program-grid { grid-template-columns: 1fr; } }
 @media (max-width: 620px) { .cards-2 { grid-template-columns: 1fr; } }
+
+/* Board */
+.board-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 260px)); gap: 16px; }
+.board-list li { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 22px; }
+.board-list strong { display: block; font-family: var(--serif); font-weight: 500; font-size: 1.2rem; }
+.board-list span { font-size: 0.9rem; color: var(--muted); }
+@media (max-width: 620px) { .board-list { grid-template-columns: 1fr; } }
