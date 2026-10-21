@@ -3,6 +3,12 @@
 const ZEFFY_URL = '';
 
 if (ZEFFY_URL) {
+  // Header Donate button: goes to Zeffy once the link is set (otherwise to the Donations policy)
+  document.querySelectorAll('[data-donate-btn]').forEach((a) => {
+    a.href = ZEFFY_URL;
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
   document.querySelectorAll('[data-donate]').forEach((el) => {
     el.hidden = false;
     el.querySelectorAll('a').forEach((a) => { a.href = ZEFFY_URL; });

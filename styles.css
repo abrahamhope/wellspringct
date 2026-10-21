@@ -84,7 +84,7 @@ p { margin: 0 0 1.1em; }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 76px; }
 .brand img { height: 42px; width: auto; }
 .nav-links { display: flex; align-items: center; gap: 34px; list-style: none; margin: 0; padding: 0; }
-.nav-links a { color: var(--ink); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+.nav-links a { color: var(--ink); text-decoration: none; font-weight: 500; font-size: 0.95rem; white-space: nowrap; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--blue); }
 .nav-links .btn { color: var(--white); padding: 0.6rem 1.2rem; }
 .nav-toggle {
@@ -245,7 +245,11 @@ section { padding: 96px 0; }
   .cta-actions { justify-content: flex-start; }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1040px) {
+  .nav-links { gap: 24px; }
+}
+
+@media (max-width: 860px) {
   .nav-toggle { display: block; }
   .nav-links {
     display: none;
