@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 
@@ -21,9 +21,36 @@
     </button>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="programs.html">Programs</a></li>
-      <li><a href="https://wcc.gathera.org" target="_blank" rel="noopener">Events &amp; Service</a></li>
+      <li class="has-sub">
+        <a href="about.html">About</a>
+        <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="about-menu" aria-label="About menu"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg></button>
+        <ul class="sub" id="about-menu">
+          <li><a href="about.html#who-we-are">Who we are</a></li>
+          <li><a href="about.html#mission">Mission &amp; vision</a></li>
+          <li><a href="about.html#board">Our board</a></li>
+          <li><a href="about.html#values">Our values</a></li>
+        </ul>
+      </li>
+      <li class="has-sub">
+        <a href="programs.html">Programs</a>
+        <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="programs-menu" aria-label="Programs menu"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg></button>
+        <ul class="sub" id="programs-menu">
+          <li><a href="programs.html#weekend-school">Weekend School</a></li>
+          <li><a href="programs.html#religious-education">Religious Education</a></li>
+          <li><a href="programs.html#interfaith-dialogue">Interfaith Dialogue</a></li>
+          <li><a href="programs.html#workshops">Workshops</a></li>
+          <li><a href="programs.html#community-engagement">Community Engagement</a></li>
+          <li><a href="programs.html#community-service">Community Service</a></li>
+        </ul>
+      </li>
+      <li class="has-sub">
+        <a href="https://wcc.gathera.org" target="_blank" rel="noopener">Events &amp; Service</a>
+        <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="events-menu" aria-label="Events and Service menu"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg></button>
+        <ul class="sub" id="events-menu">
+          <li><a href="https://wcc.gathera.org/gatherings" target="_blank" rel="noopener">Upcoming events</a></li>
+          <li><a href="https://wcc.gathera.org/services" target="_blank" rel="noopener">Service opportunities</a></li>
+        </ul>
+      </li>
       <li><a href="contact.html">Contact</a></li>
       <li><a class="btn btn-primary" href="https://www.zeffy.com/en-US/donation-form/building-humanity-trough-equity-dialog-and-purpose" target="_blank" rel="noopener">Donate</a></li>
     </ul>
@@ -31,7 +58,7 @@
 </header>
 
 <main>
-  <section class="page-hero" style="border-bottom:0; min-height:50vh">
+  <section class="page-hero" style="padding-bottom:64px">
     <div class="wrap">
       <span class="eyebrow">Page not found</span>
       <h1>We couldn&rsquo;t find that page</h1>
@@ -90,6 +117,6 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="main.js?v=2"></script>
 </body>
 </html>
